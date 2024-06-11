@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bc018ee7-ae77-411d-b9fc-9e1bc3154d9f" name="Changes" comment="Estudos">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Poo/Agregação/AppTell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Poo/Agregacao/AppTell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Poo/Agregação/telefone/Contato.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Poo/Agregacao/telefone/Contato.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Poo/Agregação/telefone/Ligacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Poo/Agregacao/telefone/Ligacao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Poo/Agregação/telefone/ListaDeContatos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Poo/Agregacao/telefone/ListaDeContatos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Poo/Agregação/telefone/Telefone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Poo/Agregacao/telefone/Telefone.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Richard &lt;106260967+richardsantos2k@users.noreply.github.com&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="3d602a71-69f5-4c73-b292-d4c7b59ee1f0" />
+        <option name="url" value="https://github.com/Richardsantos2K/fundamentosjava.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2gHJthFpffcDgIV3pPmWZm23suP" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  }
+}</component>
+  <component name="RunManager" selected="Application.AppTell">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Poo.Polimorfismoesobrecargademetodo.App" />
+      <module name="fundamentos-javaspring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Poo.Polimorfismoesobrecargademetodo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppTell" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Poo.Agregacao.AppTell" />
+      <module name="fundamentos-javaspring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Poo.Agregacao.telefone.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JogoDadoMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Poo.personagemexempleprotected.JogoDadoMain" />
+      <module name="fundamentos-javaspring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Poo.personagemexempleprotected.jogocodigo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JogoMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Poo.joguinhoexemplemodificadores.JogoMain" />
+      <module name="fundamentos-javaspring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Poo.joguinhoexemplemodificadores.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SeriesMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Poo.seriesexemplesobreescritas.SeriesMain" />
+      <module name="fundamentos-javaspring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Poo.joguinhoexemplemodificadores.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.AppTell" />
+        <item itemvalue="Application.App" />
+        <item itemvalue="Application.JogoDadoMain" />
+        <item itemvalue="Application.JogoMain" />
+        <item itemvalue="Application.SeriesMain" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bc018ee7-ae77-411d-b9fc-9e1bc3154d9f" name="Changes" comment="Merge remote-tracking branch 'git/main'" />
+      <created>1715348786354</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1715348786354</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Fundamentos Java e spring">
+      <created>1716232680979</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1716232680979</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Fundamentos Java e spring">
+      <created>1716232700152</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1716232700152</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Fundamentos Java e spring">
+      <created>1716232704523</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1716232704523</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Fundamentos Java e spring">
+      <created>1716232780306</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1716232780306</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Fundamentos Java e spring">
+      <created>1716232797479</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1716232797479</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Fundamentos Java e spring">
+      <created>1716232818517</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1716232818517</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Fundamentos Java e spring">
+      <created>1716232828804</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1716232828804</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Fundamentos Java e spring">
+      <created>1716232857535</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1716232857535</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Fundamentos Java e spring">
+      <created>1716232861542</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1716232861542</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Fundamentos Java e spring">
+      <created>1716232895436</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1716232895436</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Fundamentos Java e spring">
+      <created>1716233008649</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1716233008649</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Merge remote-tracking branch 'git/main'">
+      <created>1716233090720</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1716233090720</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Estudos">
+      <created>1717777125455</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1717777125455</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Fundamentos Java e Spring" />
+    <MESSAGE value="Fundamentos Java e spring" />
+    <MESSAGE value="Merge remote-tracking branch 'git/main'" />
+    <MESSAGE value="Estudos" />
+    <option name="LAST_COMMIT_MESSAGE" value="Estudos" />
+  </component>
+  <component name="XDebuggerManager">
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="Poo.Agregação.telefone.ListaDeContatos" memberName="listaContatos" />
+      </pinned-members>
+    </pin-to-top-manager>
+  </component>
+</project>

@@ -1,0 +1,224 @@
+Index: src/main/java/Poo/Agregação/telefone/Telefone.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Poo/Agregação/telefone/Telefone.java b/src/main/java/Poo/Agregacao/telefone/Telefone.java
+rename from src/main/java/Poo/Agregação/telefone/Telefone.java
+rename to src/main/java/Poo/Agregacao/telefone/Telefone.java
+--- a/src/main/java/Poo/Agregação/telefone/Telefone.java	(revision 053036b8ea48c9ea1c187c71cb5433ad1703cafe)
++++ b/src/main/java/Poo/Agregacao/telefone/Telefone.java	(date 1717778059720)
+@@ -1,4 +1,4 @@
+-package Poo.Agregação.telefone;
++package Poo.Agregacao.telefone;
+ 
+ 
+ public class Telefone{
+Index: src/main/java/Poo/Agregação/AppTell.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Poo/Agregação/AppTell.java b/src/main/java/Poo/Agregacao/AppTell.java
+rename from src/main/java/Poo/Agregação/AppTell.java
+rename to src/main/java/Poo/Agregacao/AppTell.java
+--- a/src/main/java/Poo/Agregação/AppTell.java	(revision 053036b8ea48c9ea1c187c71cb5433ad1703cafe)
++++ b/src/main/java/Poo/Agregacao/AppTell.java	(date 1717778059707)
+@@ -1,9 +1,9 @@
+-package Poo.Agregação;
++package Poo.Agregacao;
+ 
+-import Poo.Agregação.telefone.Contato;
+-import Poo.Agregação.telefone.Ligacao;
+-import Poo.Agregação.telefone.ListaDeContatos;
+-import Poo.Agregação.telefone.Telefone;
++import Poo.Agregacao.telefone.Contato;
++import Poo.Agregacao.telefone.Ligacao;
++import Poo.Agregacao.telefone.ListaDeContatos;
++import Poo.Agregacao.telefone.Telefone;
+ 
+ public class AppTell {
+     public static void main(String[] args) {
+@@ -46,7 +46,7 @@
+ 
+         Ligacao ligacao = new Ligacao(telefoneContatos);
+ 
+-        ligacao.ligar("Richard");
++        ligacao.ligar("cleber");
+ 
+ 
+ 
+Index: src/main/java/Poo/Agregação/telefone/Contato.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Poo/Agregação/telefone/Contato.java b/src/main/java/Poo/Agregacao/telefone/Contato.java
+rename from src/main/java/Poo/Agregação/telefone/Contato.java
+rename to src/main/java/Poo/Agregacao/telefone/Contato.java
+--- a/src/main/java/Poo/Agregação/telefone/Contato.java	(revision 053036b8ea48c9ea1c187c71cb5433ad1703cafe)
++++ b/src/main/java/Poo/Agregacao/telefone/Contato.java	(date 1717778059733)
+@@ -1,4 +1,4 @@
+-package Poo.Agregação.telefone;
++package Poo.Agregacao.telefone;
+ 
+ 
+ public class Contato {
+Index: src/main/java/Poo/Agregação/telefone/ListaDeContatos.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Poo/Agregação/telefone/ListaDeContatos.java b/src/main/java/Poo/Agregacao/telefone/ListaDeContatos.java
+rename from src/main/java/Poo/Agregação/telefone/ListaDeContatos.java
+rename to src/main/java/Poo/Agregacao/telefone/ListaDeContatos.java
+--- a/src/main/java/Poo/Agregação/telefone/ListaDeContatos.java	(revision 053036b8ea48c9ea1c187c71cb5433ad1703cafe)
++++ b/src/main/java/Poo/Agregacao/telefone/ListaDeContatos.java	(date 1717778059740)
+@@ -1,4 +1,4 @@
+-package Poo.Agregação.telefone;
++package Poo.Agregacao.telefone;
+ 
+ import java.util.ArrayList;
+ 
+Index: src/main/java/Poo/Agregação/telefone/Ligacao.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Poo/Agregação/telefone/Ligacao.java b/src/main/java/Poo/Agregacao/telefone/Ligacao.java
+rename from src/main/java/Poo/Agregação/telefone/Ligacao.java
+rename to src/main/java/Poo/Agregacao/telefone/Ligacao.java
+--- a/src/main/java/Poo/Agregação/telefone/Ligacao.java	(revision 053036b8ea48c9ea1c187c71cb5433ad1703cafe)
++++ b/src/main/java/Poo/Agregacao/telefone/Ligacao.java	(date 1717778059713)
+@@ -1,4 +1,4 @@
+-package Poo.Agregação.telefone;
++package Poo.Agregacao.telefone;
+ 
+ public class Ligacao {
+     private String horarioLigacao;
+@@ -14,7 +14,6 @@
+ 
+         // Procurar na lista de contatos pelo nome ou pelo número
+         for (Contato contato : listaDeContatos.getListaContatos()) {
+-            System.out.println("Comparando com o contato: " + contato.getNome() + " - Número: " + contato.getNumero());
+             if (contato.getNome().equalsIgnoreCase(nomeOuNumero) || contato.getNumero().equals(nomeOuNumero)) {
+                 System.out.printf("Chamando o número associado ao contato: %s - Número: %s\n",
+                         contato.getNome(),
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"bc018ee7-ae77-411d-b9fc-9e1bc3154d9f\" name=\"Changes\" comment=\"Merge remote-tracking branch 'git/main'\">\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/Poo/Agregação/AppTell.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/Poo/Agregação/telefone/Contato.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/Poo/Agregação/telefone/Ligacao.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/Poo/Agregação/telefone/ListaDeContatos.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/Poo/Agregação/telefone/Telefone.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/Poo/Arraysexemplearrays/ArraysExemplos.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/Poo/Arraysexemplearrays/OrdenandoNumeros.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/Poo/Arraysexemplearrays/Pessoa.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/Poo/Calcexemplemetodos/Circulo.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/Poo/Calcexemplemetodos/Circulomain.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/Poo/Calcexemplemetodos/FigurasGeometricas.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/Poo/Calcexemplemetodos/Quadrado.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/Poo/Polimorfismoesobrecargademetodo/App.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/Poo/Polimorfismoesobrecargademetodo/RichFlix/Filme.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/Poo/Polimorfismoesobrecargademetodo/RichFlix/Serie.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/Poo/Polimorfismoesobrecargademetodo/RichFlix/Video.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/Poo/bancoexemplearraysandmetodos/ContaCorrente.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/Poo/bancoexemplearraysandmetodos/ContaPoupanca.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/Poo/escola/Alunos.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/Poo/escola/EscolaMain.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/Poo/joguinhoexemplemodificadores/Atirador.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/Poo/joguinhoexemplemodificadores/JogoMain.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/Poo/joguinhoexemplemodificadores/Personagem.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/Poo/personagemexempleprotected/JogoDadoMain.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/Poo/personagemexempleprotected/jogocodigo/Guerreiro.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/Poo/personagemexempleprotected/jogocodigo/Personagem.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/Poo/pessoaexempleherancainterfaces/Aluno.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/Poo/pessoaexempleherancainterfaces/Dados.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/Poo/seriesexemplesobreescritas/Serie.java\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/Poo/seriesexemplesobreescritas/SeriesMain.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/Poo/banco/BancoMain.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/Poo/bancoexemplearraysandmetodos/BancoMain.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/Poo/banco/CadastroBanco.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/Poo/bancoexemplearraysandmetodos/Conta.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/Poo/conta/ContaBancaria.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/Poo/contaexemplemetodos/ContaBancaria.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/Poo/conta/TesteConta.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/Poo/contaexemplemetodos/TesteConta.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/Poo/pessoa/Aluno.java\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/Poo/pessoa/Pessoa.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/Poo/pessoaexempleherancainterfaces/Pessoa.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/Poo/pessoa/Professor.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/Poo/pessoaexempleherancainterfaces/Professor.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/Poo/pessoa/testePessoa.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/Poo/pessoaexempleherancainterfaces/testePessoa.java\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Interface\" />\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"PREVIOUS_COMMIT_AUTHORS\">\r\n      <list>\r\n        <option value=\"Richard &lt;106260967+richardsantos2k@users.noreply.github.com&gt;\" />\r\n      </list>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2gHJthFpffcDgIV3pPmWZm23suP\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\r\n    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;\r\n  }\r\n}</component>\r\n  <component name=\"RunManager\" selected=\"Application.AppTell\">\r\n    <configuration name=\"App\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"Poo.Polimorfismoesobrecargademetodo.App\" />\r\n      <module name=\"fundamentos-javaspring\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"Poo.Polimorfismoesobrecargademetodo.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"AppTell\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"Poo.Agregação.AppTell\" />\r\n      <module name=\"fundamentos-javaspring\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"Poo.Agregação.telefone.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"JogoDadoMain\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"Poo.personagemexempleprotected.JogoDadoMain\" />\r\n      <module name=\"fundamentos-javaspring\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"Poo.personagemexempleprotected.jogocodigo.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"JogoMain\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"Poo.joguinhoexemplemodificadores.JogoMain\" />\r\n      <module name=\"fundamentos-javaspring\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"Poo.joguinhoexemplemodificadores.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"SeriesMain\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"Poo.seriesexemplesobreescritas.SeriesMain\" />\r\n      <module name=\"fundamentos-javaspring\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"Poo.joguinhoexemplemodificadores.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"Application.AppTell\" />\r\n        <item itemvalue=\"Application.App\" />\r\n        <item itemvalue=\"Application.JogoDadoMain\" />\r\n        <item itemvalue=\"Application.JogoMain\" />\r\n        <item itemvalue=\"Application.SeriesMain\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"bc018ee7-ae77-411d-b9fc-9e1bc3154d9f\" name=\"Changes\" comment=\"Merge remote-tracking branch 'git/main'\" />\r\n      <created>1715348786354</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1715348786354</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Fundamentos Java e spring\">\r\n      <created>1716232680979</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1716232680979</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Fundamentos Java e spring\">\r\n      <created>1716232700152</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1716232700152</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Fundamentos Java e spring\">\r\n      <created>1716232704523</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1716232704523</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"Fundamentos Java e spring\">\r\n      <created>1716232780306</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1716232780306</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"Fundamentos Java e spring\">\r\n      <created>1716232797479</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1716232797479</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"Fundamentos Java e spring\">\r\n      <created>1716232818517</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1716232818517</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"Fundamentos Java e spring\">\r\n      <created>1716232828804</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1716232828804</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"Fundamentos Java e spring\">\r\n      <created>1716232857535</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1716232857535</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"Fundamentos Java e spring\">\r\n      <created>1716232861542</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1716232861542</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00010\" summary=\"Fundamentos Java e spring\">\r\n      <created>1716232895436</created>\r\n      <option name=\"number\" value=\"00010\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1716232895436</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00011\" summary=\"Fundamentos Java e spring\">\r\n      <created>1716233008649</created>\r\n      <option name=\"number\" value=\"00011\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00011\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1716233008649</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00012\" summary=\"Merge remote-tracking branch 'git/main'\">\r\n      <created>1716233090720</created>\r\n      <option name=\"number\" value=\"00012\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00012\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1716233090720</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"13\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Fundamentos Java e Spring\" />\r\n    <MESSAGE value=\"Fundamentos Java e spring\" />\r\n    <MESSAGE value=\"Merge remote-tracking branch 'git/main'\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Merge remote-tracking branch 'git/main'\" />\r\n  </component>\r\n  <component name=\"XDebuggerManager\">\r\n    <pin-to-top-manager>\r\n      <pinned-members>\r\n        <PinnedItemInfo parentTag=\"Poo.Agregação.telefone.ListaDeContatos\" memberName=\"listaContatos\" />\r\n      </pinned-members>\r\n    </pin-to-top-manager>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 053036b8ea48c9ea1c187c71cb5433ad1703cafe)
++++ b/.idea/workspace.xml	(date 1717778059761)
+@@ -4,46 +4,13 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="bc018ee7-ae77-411d-b9fc-9e1bc3154d9f" name="Changes" comment="Merge remote-tracking branch 'git/main'">
+-      <change afterPath="$PROJECT_DIR$/src/main/java/Poo/Agregação/AppTell.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/Poo/Agregação/telefone/Contato.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/Poo/Agregação/telefone/Ligacao.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/Poo/Agregação/telefone/ListaDeContatos.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/Poo/Agregação/telefone/Telefone.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/Poo/Arraysexemplearrays/ArraysExemplos.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/Poo/Arraysexemplearrays/OrdenandoNumeros.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/Poo/Arraysexemplearrays/Pessoa.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/Poo/Calcexemplemetodos/Circulo.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/Poo/Calcexemplemetodos/Circulomain.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/Poo/Calcexemplemetodos/FigurasGeometricas.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/Poo/Calcexemplemetodos/Quadrado.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/Poo/Polimorfismoesobrecargademetodo/App.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/Poo/Polimorfismoesobrecargademetodo/RichFlix/Filme.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/Poo/Polimorfismoesobrecargademetodo/RichFlix/Serie.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/Poo/Polimorfismoesobrecargademetodo/RichFlix/Video.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/Poo/bancoexemplearraysandmetodos/ContaCorrente.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/Poo/bancoexemplearraysandmetodos/ContaPoupanca.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/Poo/escola/Alunos.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/Poo/escola/EscolaMain.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/Poo/joguinhoexemplemodificadores/Atirador.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/Poo/joguinhoexemplemodificadores/JogoMain.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/Poo/joguinhoexemplemodificadores/Personagem.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/Poo/personagemexempleprotected/JogoDadoMain.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/Poo/personagemexempleprotected/jogocodigo/Guerreiro.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/Poo/personagemexempleprotected/jogocodigo/Personagem.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/Poo/pessoaexempleherancainterfaces/Aluno.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/Poo/pessoaexempleherancainterfaces/Dados.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/Poo/seriesexemplesobreescritas/Serie.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/Poo/seriesexemplesobreescritas/SeriesMain.java" afterDir="false" />
++    <list default="true" id="bc018ee7-ae77-411d-b9fc-9e1bc3154d9f" name="Changes" comment="Estudos">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/Poo/banco/BancoMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Poo/bancoexemplearraysandmetodos/BancoMain.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/Poo/banco/CadastroBanco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Poo/bancoexemplearraysandmetodos/Conta.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/Poo/conta/ContaBancaria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Poo/contaexemplemetodos/ContaBancaria.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/Poo/conta/TesteConta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Poo/contaexemplemetodos/TesteConta.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/Poo/pessoa/Aluno.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/Poo/pessoa/Pessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Poo/pessoaexempleherancainterfaces/Pessoa.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/Poo/pessoa/Professor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Poo/pessoaexempleherancainterfaces/Professor.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/Poo/pessoa/testePessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Poo/pessoaexempleherancainterfaces/testePessoa.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/Poo/Agregação/AppTell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Poo/Agregacao/AppTell.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/Poo/Agregação/telefone/Contato.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Poo/Agregacao/telefone/Contato.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/Poo/Agregação/telefone/Ligacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Poo/Agregacao/telefone/Ligacao.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/Poo/Agregação/telefone/ListaDeContatos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Poo/Agregacao/telefone/ListaDeContatos.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/Poo/Agregação/telefone/Telefone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Poo/Agregacao/telefone/Telefone.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -65,6 +32,14 @@
+       </list>
+     </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
++  </component>
++  <component name="GithubPullRequestsUISettings">
++    <option name="selectedUrlAndAccountId">
++      <UrlAndAccount>
++        <option name="accountId" value="3d602a71-69f5-4c73-b292-d4c7b59ee1f0" />
++        <option name="url" value="https://github.com/Richardsantos2K/fundamentosjava.git" />
++      </UrlAndAccount>
++    </option>
+   </component>
+   <component name="MarkdownSettingsMigration">
+     <option name="stateVersion" value="1" />
+@@ -98,11 +73,11 @@
+       </method>
+     </configuration>
+     <configuration name="AppTell" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+-      <option name="MAIN_CLASS_NAME" value="Poo.Agregação.AppTell" />
++      <option name="MAIN_CLASS_NAME" value="Poo.Agregacao.AppTell" />
+       <module name="fundamentos-javaspring" />
+       <extension name="coverage">
+         <pattern>
+-          <option name="PATTERN" value="Poo.Agregação.telefone.*" />
++          <option name="PATTERN" value="Poo.Agregacao.telefone.*" />
+           <option name="ENABLED" value="true" />
+         </pattern>
+       </extension>
+@@ -252,7 +227,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1716233090720</updated>
+     </task>
+-    <option name="localTasksCounter" value="13" />
++    <task id="LOCAL-00013" summary="Estudos">
++      <created>1717777125455</created>
++      <option name="number" value="00013" />
++      <option name="presentableId" value="LOCAL-00013" />
++      <option name="project" value="LOCAL" />
++      <updated>1717777125455</updated>
++    </task>
++    <option name="localTasksCounter" value="14" />
+     <servers />
+   </component>
+   <component name="Vcs.Log.Tabs.Properties">
+@@ -270,7 +252,8 @@
+     <MESSAGE value="Fundamentos Java e Spring" />
+     <MESSAGE value="Fundamentos Java e spring" />
+     <MESSAGE value="Merge remote-tracking branch 'git/main'" />
+-    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'git/main'" />
++    <MESSAGE value="Estudos" />
++    <option name="LAST_COMMIT_MESSAGE" value="Estudos" />
+   </component>
+   <component name="XDebuggerManager">
+     <pin-to-top-manager>
