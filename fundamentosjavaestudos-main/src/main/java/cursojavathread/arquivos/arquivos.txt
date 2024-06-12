@@ -1,0 +1,3 @@
+carlos;pessoa1@gamil.com;25
+Nilce;pessoa2@gamil.com;40
+Rogerio;pessoa2@gamil.com;30
